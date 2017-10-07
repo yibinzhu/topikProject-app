@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/test/test",
+    "pages/index/index",
+    "pages/category/category",
+    
+    "pages/player/player",
+    "pages/plan/plan",
+    "pages/setting/setting",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#858585",
+    "selectedColor": "#39b5de",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./images/icons/mark.png",
+        "selectedIconPath": "./images/icons/markHL.png",
+        "text": "练习"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "iconPath": "./images/icons/mine.png",
+        "selectedIconPath": "./images/icons/mineHL.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

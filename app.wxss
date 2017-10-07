@@ -1,0 +1,42 @@
+/**app.wxss**/
+.container {
+  margin:0 20rpx;
+  padding: 0 40rpx;
+  border-radius: 8rpx;
+  box-shadow:3rpx 3rpx 3rpx 3rpx #d4d4d4;
+  box-sizing: border-box;
+  margin-bottom:30rpx;
+  background-color: #ffffff;
+ 
+} 
+.row-layout{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.column-layout{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box{
+  align-content: stretch;
+}
+.tabBar{
+  color:#37aba2;
+  padding:40rpx 0;
+  border-top:1px solid #cdcdcd;
+  background-color:#f6f6f6;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  font-size:15px;
+}
+.subTitle{
+  font-size:15px;
+  color:#8b8b8b;
+
+}

@@ -1,0 +1,38 @@
+/* pages/test/test.wxss */
+@keyframes cnloading{
+	0%{ transform: translateY(0rpx)}
+	50%{ transform: translateY(20rpx)}
+	100%{ transform: translateY(0rpx)}
+}
+
+.question-container{
+  margin:20rpx 40rpx;
+}
+.answer-container{
+  border-radius: 8rpx;
+  box-shadow:3rpx 3rpx 3rpx 3rpx #d4d4d4;
+  background-color:white;
+  padding:10rpx 40rpx;
+  margin:20rpx 40rpx;
+  color:#8b8b8b;
+}
+.option-choosed{
+  border:1px solid #37aba2;
+}
+.audio-btn{
+  border:1px solid black;
+  font-size:15px;
+  margin-left:40rpx;
+  margin-top:40rpx;
+  width:150rpx;
+  height:40rpx;
+  text-align: center;
+  border-radius:20rpx;
+}
+
+.cntloading{padding: 10rpx 0;text-align: center;color: #888;font-size: 15px;}
+.cntloading view{display: inline-block;vertical-align: baseline;height: 34rpx;overflow: hidden;margin-left: 10rpx;}
+.cntloading text{width: 5rpx;height: 30rpx;background-color: #d33a31;position: relative;display: inline-block;margin-right: 6rpx;
+border-radius: 3rpx;animation: cnloading .9s linear infinite; transform-origin: center bottom;}
+.cntloading .cl2{ animation-delay: -.6s}
+.cntloading .cl3{animation-delay: -.3s}

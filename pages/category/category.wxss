@@ -1,0 +1,32 @@
+/* pages/category/category.wxss */
+#header{position: fixed;top: 0;width: 100%; z-index: 10;-webkit-backdrop-filter: blur(15px);}
+.tab{display: flex;border-bottom: 1rpx solid rgba(200,200,200,.5); background:rgba(240,240,240,.8);height: 80rpx;line-height: 80rpx;}
+.tab .tab-item{text-align: center; flex:auto; word-break: keep-all;font-size: 30rpx;}
+.tab .tab-item .tbi-text{display: inline-block;padding: 0 .3em; vertical-align: top;line-height: 76rpx;height: 77rpx;}
+.tab .tab-item .tbi-des{display: inline;color: #999; border-bottom: none;font-size: 24rpx;line-height: 1;padding-left: .5em}
+.tab .tbi-cur .tbi-text{color: #d33a31; margin-bottom: -1rpx;border-bottom:4rpx solid  #d33a31}
+
+.subTitle{
+  font-size:16px;
+  color:#37aba2;
+  margin:40rpx;
+}
+.c-container{
+ background-color:#f8f8f8;
+ height: 100%;
+}
+.c-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.c-item{
+  width:60rpx;
+  height: 60rpx;
+  padding:20rpx;
+  background-color:white;
+  box-shadow:3rpx 3rpx 3rpx 3rpx #d4d4d4;
+  border-bottom:1px solid #d4d4d4;
+  text-align: center;
+}

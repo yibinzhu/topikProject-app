@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<image src="../../images/background.jpg" class="header-pic"></image>
+<view class="header">
+  <view class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  </view>
+  <view class="header-check"><text>累计打卡0天</text></view>
+  <view class="header-refresh">刷新</view>
+  <view class="header-search">查找</view>
+</view>
+<!-- 分数栏 -->
+<view class=" container column-layout" style="height:80px;margin-top:-80rpx; justify-content: center">
+  <view class="row-layout">
+    <view class="column-layout" style="width:340rpx">
+      <view class="sub-title">2017-10-20考试</view>
+      <view style="color:#37aba2"><text style="font-size:30px;margin-right:10rpx">15</text>天</view>
+    </view>
+    <view style="border:1px solid #e8e8e8;height:120rpx;marign:0;"></view>
+    <view class="column-layout" style="width:340rpx;">
+      <view class="sub-title">目标分数</view>
+      <view style="color:#37aba2"><text style="font-size:30px;margin-right:10rpx">12</text>分</view>
+    </view>
+  </view>
+</view>
+<!-- 分类栏 -->
+<view class="container column-layout" style="height:250px; justify-content: space-between;padding:40rpx 30rpx">
+  <view>TOPIK考试资料</view>
+  <view class="sub-title">覆盖核心联系材料 + 多种联系方式</view>
+
+  <view class="row-layout" style="width:100%;padding:0 40rpx;">
+    <view class="column-layout">
+      <navigator url="../category/category"><view class="circle" style="background-color:#a0d93e"></view></navigator>
+      <view>听力</view>
+    </view>
+    <view class="column-layout">
+      <navigator url="../category/category"><view class="circle" style="background-color:#ff8252"></view></navigator>
+      <view>口语</view>
+    </view>
+    <view class="column-layout">
+      <view class="circle" style="background-color:#32b3c8"></view>
+      <view>阅读</view>
+    </view>
+    <view class="column-layout">
+      <view class="circle" style="background-color:#fcc433"></view>
+      <view>写作</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,46 @@
+/**index.wxss**/
+.header-check{
+  position: absolute;
+  top:40rpx;
+  left:180rpx;
+  color:white;
+  border: 1px solid white;
+  padding:10rpx;
+  border-radius: 80px;
+  font-size: 15px;
+}
+.header-refresh{
+  position: absolute;
+  top:40rpx;
+  right:160rpx;
+
+}
+.header-search{
+  position: absolute;
+  top:40rpx;
+  right:40rpx;
+}
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  position:absolute;
+  top:20rpx;
+  left:40rpx;
+}
+.header-pic{
+  height: 300rpx;
+  width: 100%;
+  position:relative;
+  z-index: -999;
+}
+.sub-title{
+  font-size:15px;
+  color:#818181;
+}
+.circle{
+  width: 130rpx;
+  height:130rpx;
+  border-radius: 50%;
+  margin-bottom: 20rpx;
+}

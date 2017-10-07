@@ -1,0 +1,18 @@
+<!--pages/player/player.wxml-->
+<view class="title-container subTitle">音频材料</view>
+<view class="title-container">disscuss a project on service design</view>
+<view class="title-container">服务设计项目讨论</view>
+
+<view class="cover-container"><image src="../../images/sls.JPG" mode=""></image></view>
+
+<audio  src="/data/test.mp3" id="myAudio" ></audio>
+<view class="row-layout">
+<button type="primary" bindtap="audioPlay">播放</button>
+<button type="primary" bindtap="audioPause">暂停</button>
+<button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>
+<button type="primary" bindtap="audioStart">回到开头</button>
+</view>
+<view class="tabBar">
+  <view>播放速度 x1.0</view>
+  <navigator url="../test/test"><view>开始答题</view></navigator>
+</view>

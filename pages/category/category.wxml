@@ -1,0 +1,28 @@
+<!--pages/category/category.wxml-->
+<view id="header" class="tab">
+  <view class="tab-item  {{topik1.idx==tabidx?'tbi-cur':''}}" bindtap="switchtab" data-t="0">
+    <text class="tbi-text">TOPIK 1</text>
+  </view>
+  <view class="tab-item  {{topik2.idx==tabidx?'tbi-cur':''}}" bindtap="switchtab" data-t="1">
+    <text class="tbi-text">TOPIK 2</text>
+  </view>
+</view>
+<scroll-view class="c-container" style="margin-top:60rpx;">
+<view hidden="{{tabidx!=0}}" wx:for="{{categoryData}}" wx:key="{{item}}">
+    <view class="subTitle">{{item.years}}年</view>
+    <view class="c-row">
+      <view wx:for="{{item.times}}" wx:for-item="i" wx:key="{{i}}">
+      <view class="c-item" data-c="1" data-t="{{i}}" bindtap="itemChoose">{{i}}</view>
+      </view>
+    </view>
+  </view>
+  
+  <view hidden="{{tabidx!=1}}" wx:for="{{categoryData}}" wx:key="{{item}}">
+    <view class="subTitle">{{item.years}}年</view>
+    <view class="c-row">
+      <view wx:for="{{item.times}}" wx:for-item="i" wx:key="{{i}}">
+      <view class="c-item" data-c="2" data-t="{{i}}" bindtap="itemChoose">{{i}}</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

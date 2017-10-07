@@ -1,0 +1,22 @@
+<!--pages/test/test.wxml-->
+<view>
+  <view class="question-container" style="font-size:18px;color:#8b8b8b">Question 2 of 5</view>
+  <view class="question-container">why does the professor mention a student in another class?</view>
+  <view class="answer-container {{option1.id==idx?'option-choosed':''}}" data-t="1" bindtap="chooseAnswer">A:To describe an interesting topic for a project</view>
+  <view class="answer-container {{option2.id==idx?'option-choosed':''}}" data-t="2" bindtap="chooseAnswer">B:To describe an interesting topic for a project</view>
+  <view class="answer-container {{option3.id==idx?'option-choosed':''}}" data-t="3" bindtap="chooseAnswer">C:To describe an interesting topic for a project</view>
+  <view class="answer-container {{option4.id==idx?'option-choosed':''}}" data-t="4" bindtap="chooseAnswer">E:To describe an interesting topic for a project</view>
+</view>
+<audio  src="/data/test.mp3" id="myAudio" ></audio>
+<view class="audio-btn cntloading" bindtap="audioPlay">
+  <view>播放
+  <text class="cl1"></text>
+  <text class="cl2"></text>
+  <text class="cl3"></text>
+  </view>
+  </view>
+<view class="tabBar">
+  <view>Review</view>
+  <view>02/05</view>
+  <view>Next</view>
+</view>

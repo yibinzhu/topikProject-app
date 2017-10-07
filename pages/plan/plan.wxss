@@ -1,0 +1,7 @@
+/* pages/plan/plan.wxss */
+.plan-container{
+  margin:40rpx 40rpx;
+}
+.plan-item{
+  padding:40rpx 0;
+}

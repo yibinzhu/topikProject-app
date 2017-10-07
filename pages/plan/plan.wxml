@@ -1,0 +1,15 @@
+<!--pages/plan/plan.wxml-->
+<view class="plan-container">
+<view>我的考试计划</view>
+<view class="plan-item">目标分数</view>
+
+<view class="row-layout plan-item"><view>考试时间</view><view>年月日</view></view>
+<view style="color:#8b8b8b;font-size:16px;">
+<view class="plan-item">目标分数</view>
+<view class="row-layout plan-item"><view>阅读</view><view>0</view></view>
+  <view class="row-layout plan-item"><view>听力</view><view>0</view></view>
+  <view class="row-layout plan-item"><view>口语</view><view>0</view></view>
+  <view class="row-layout plan-item"><view>写作</view><view>0</view></view>
+</view>
+</view>
+<view class="tabBar">修改考试计划</view>

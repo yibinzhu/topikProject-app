@@ -1,0 +1,13 @@
+<!--pages/setting/setting.wxml-->
+<image class="setting-bg" src="../../images/crab.png"></image>
+<view class="column-layout userinfo-container">
+  <image src="{{}}" class="userinfo-avatar"></image>
+  <view>hellokitty</view>
+  <view>请设置考试事件和目标分数</view>
+  <view class="setting-check">累计打卡0天</view>
+</view>
+<view class="container" style="">
+  <view class="row-layout setting-item item-border"><view>我的收藏</view><view>我的课程</view></view>
+  <view class="row-layout setting-item item-border"><view>学习记录</view><view>听课统计</view></view>
+  <view class="row-layout setting-item"><view>离线管理</view><view>留学咨询</view></view>
+</view>
