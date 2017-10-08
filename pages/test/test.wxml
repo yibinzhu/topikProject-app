@@ -1,5 +1,5 @@
 <!--pages/test/test.wxml-->
-<scroll-view scroll-y style="">
+<scroll-view scroll-y style="height:{{windowH}}px">
 <view>
   <view class="question-container" style="font-size:18px;color:#8b8b8b">现在是第 {{queIdx+1}} 题 总共 {{questionData.length}} 题</view> 
   <!-- 例题 -->

@@ -1,9 +1,9 @@
 {
   "pages":[
-    "pages/test/test",
+    "pages/planEdit/planEdit",
     "pages/index/index",
+    "pages/test/test",
     "pages/category/category",
-    
     "pages/player/player",
     "pages/plan/plan",
     "pages/setting/setting",
@@ -12,7 +12,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "TOPIK韩语备考",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
@@ -23,9 +23,9 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "./images/icons/mark.png",
-        "selectedIconPath": "./images/icons/markHL.png",
-        "text": "练习"
+        "iconPath": "./images/icons/home.png",
+        "selectedIconPath": "./images/icons/homeHL.png",
+        "text": "主页"
       },
       {
         "pagePath": "pages/setting/setting",

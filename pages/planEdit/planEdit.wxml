@@ -1,0 +1,28 @@
+<!--pages/planEdit/planEdit.wxml-->
+<view class="planEditContainer">
+  <view class="planTitle">计划考试时间</view>
+  <view class="datePickerContainer">
+    <picker class="weui-btn" mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange" style="width:100%">
+        <view>{{date}}</view>
+    </picker>
+    <icon type="success"  color="gray"/>
+  </view>
+  <view class="planTitle">目标分数</view>
+  <view class="planSubTitle">总分</view>
+  <view class="input-info"><input auto-focus bindinput="bindTotalInput"/></view>
+  <view class="row-item">
+  <view class="column-layout-item"><view class="planSubTitle">阅读</view>
+  <view class="input-info"><input auto-focus bindinput="bindReadingInput" /></view>
+  </view>
+  <view class="column-layout-item"><view class="planSubTitle">听力</view>
+  <view class="input-info"><input auto-focus bindinput="bindListeningInput"/></view>
+  </view>
+  <view class="column-layout-item"><view class="planSubTitle">口语</view>
+  <view class="input-info"><input auto-focus bindinput="bindSpeakingInput"/></view>
+  </view>
+  <view class="column-layout-item"><view class="planSubTitle">写作</view>
+  <view class="input-info"><input auto-focus bindinput="bindWritingInput"/></view>
+  </view>
+  </view>
+  <view type="default" class="submit-btn">确定</view>
+</view>

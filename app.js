@@ -34,6 +34,13 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    examDate:'',
+    total:'',
+    reading:'',
+    speaking:'',
+    writing:'',
+    listening:'',
+    baseUrl:'http://127.0.0.1:3000'
   }
 })

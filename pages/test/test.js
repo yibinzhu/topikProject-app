@@ -17,6 +17,7 @@ Page({
     option4: {
       id: '4'
     },
+    windowH:'',
     total:'',
     queIdx:0,
     playIcon:'',
@@ -158,7 +159,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var that = this;
+    wx.getSystemInfo({
+      success: function (res) {
+        that.setData({
+          windowH: res.windowHeight - 62
+        });
+      }
+    })
   },
 
   /**

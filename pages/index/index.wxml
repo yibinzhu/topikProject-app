@@ -5,8 +5,8 @@
       <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
   </view>
   <view class="header-check"><text>累计打卡0天</text></view>
-  <view class="header-refresh">刷新</view>
-  <view class="header-search">查找</view>
+  <!-- <view class="header-refresh">刷新</view> -->
+  <view class="header-search"><icon type="search" color="white"/></view>
 </view>
 <!-- 分数栏 -->
 <view class=" container column-layout" style="height:80px;margin-top:-80rpx; justify-content: center">
@@ -25,23 +25,23 @@
 <!-- 分类栏 -->
 <view class="container column-layout" style="height:250px; justify-content: space-between;padding:40rpx 30rpx">
   <view>TOPIK考试资料</view>
-  <view class="sub-title">覆盖核心联系材料 + 多种联系方式</view>
+  <view class="sub-title">覆盖核心学习材料 + 多种练习方式</view>
 
   <view class="row-layout" style="width:100%;padding:0 40rpx;">
     <view class="column-layout">
-      <navigator url="../category/category"><view class="circle" style="background-color:#a0d93e"></view></navigator>
+      <navigator url="../category/category"><view class="circle" style="background-color:#a0d93e"><image src="../../images/icons/listening.png"/></view></navigator>
       <view>听力</view>
     </view>
     <view class="column-layout">
-      <navigator url="../category/category"><view class="circle" style="background-color:#ff8252"></view></navigator>
+      <navigator url="../category/category"><view class="circle" style="background-color:#ff8252"><image src="../../images/icons/speaking.png"/></view></navigator>
       <view>口语</view>
     </view>
     <view class="column-layout">
-      <view class="circle" style="background-color:#32b3c8"></view>
+      <view class="circle" style="background-color:#32b3c8"><image src="../../images/icons/reading.png"/></view>
       <view>阅读</view>
     </view>
     <view class="column-layout">
-      <view class="circle" style="background-color:#fcc433"></view>
+      <view class="circle" style="background-color:#fcc433"><image src="../../images/icons/writing.png"/></view>
       <view>写作</view>
     </view>
   </view>

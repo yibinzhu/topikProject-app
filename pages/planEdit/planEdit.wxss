@@ -1,0 +1,45 @@
+/* pages/planEdit/planEdit.wxss */
+.planEditContainer{
+  margin:40rpx;
+}
+.datePickerContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom:1px solid #cccccc;
+  margin:20px 0;
+}
+.planTitle{
+  font-size:18px;
+  color:#3dacb7;
+  margin:20px 0;
+}
+.planSubTitle{
+  font-size:15px;
+  color:gray;
+}
+.row-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.column-layout-item{
+  display: flex;
+  flex-direction: column;
+  margin:40px 20rpx 40rpx 0;
+}
+.input-info{
+  border-bottom:2px solid #cccccc;
+}
+.submit-btn{
+  margin-top:140rpx;
+  color:white;
+  background-color: #3dacb7;
+  height:46px;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}

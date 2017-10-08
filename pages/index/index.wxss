@@ -5,7 +5,7 @@
   left:180rpx;
   color:white;
   border: 1px solid white;
-  padding:10rpx;
+  padding:10rpx 20rpx;
   border-radius: 80px;
   font-size: 15px;
 }
@@ -43,4 +43,12 @@
   height:130rpx;
   border-radius: 50%;
   margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.circle image{
+  width:40px;
+  height:40px;
 }
