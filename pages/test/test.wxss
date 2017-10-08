@@ -14,6 +14,14 @@
   background-color:white;
   padding:10rpx 40rpx;
   margin:20rpx 40rpx;
+  color:black;
+}
+.ex-container{
+  border-radius: 8rpx;
+  background-color:white;
+  border:1px solid black;
+  padding:10rpx 40rpx;
+  margin:20rpx 40rpx;
   color:#8b8b8b;
 }
 .option-choosed{
@@ -25,7 +33,7 @@
   margin-left:40rpx;
   margin-top:40rpx;
   width:150rpx;
-  height:40rpx;
+  padding:10rpx 10rpx;
   text-align: center;
   border-radius:20rpx;
 }
@@ -36,3 +44,21 @@
 border-radius: 3rpx;animation: cnloading .9s linear infinite; transform-origin: center bottom;}
 .cntloading .cl2{ animation-delay: -.6s}
 .cntloading .cl3{animation-delay: -.3s}
+
+.control-btn{
+  display: flex;
+  flex-direction: row;
+}
+.pauseIcon{
+  width:20rpx;
+  height:20rpx;
+  background-color:black;
+}
+.ex-answers{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.ex-item{
+  padding-right:20rpx;
+}
