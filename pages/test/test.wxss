@@ -4,7 +4,6 @@
 	50%{ transform: translateY(20rpx)}
 	100%{ transform: translateY(0rpx)}
 }
-
 .question-container{
   margin:20rpx 40rpx;
 }
@@ -12,17 +11,24 @@
   border-radius: 8rpx;
   box-shadow:3rpx 3rpx 3rpx 3rpx #d4d4d4;
   background-color:white;
-  padding:20rpx 40rpx;
+  padding:30rpx 40rpx;
   margin:20rpx 40rpx;
   color:black;
+}
+.answer-num{
+  color:#37aba2;
+  margin-right:10rpx;
 }
 .ex-container{
   border-radius: 8rpx;
   background-color:white;
-  border:1px solid black;
+  border:1px solid #37aba2;
   padding:10rpx 40rpx;
   margin:20rpx 40rpx;
   color:#8b8b8b;
+}
+.ex-num{
+  margin-right:5px;
 }
 .option-choosed{
   border:1px solid #37aba2;
@@ -49,11 +55,6 @@ border-radius: 3rpx;animation: cnloading .9s linear infinite; transform-origin: 
   display: flex;
   flex-direction: row;
 }
-.pauseIcon{
-  width:20rpx;
-  height:20rpx;
-  background-color:black;
-}
 .ex-answers{
   display:flex;
   flex-direction: row;
@@ -61,4 +62,8 @@ border-radius: 3rpx;animation: cnloading .9s linear infinite; transform-origin: 
 }
 .ex-item{
   padding-right:20rpx;
+}
+.playIcon image{
+ width: 80rpx;
+ height:80rpx;
 }

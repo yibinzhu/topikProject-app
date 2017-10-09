@@ -6,6 +6,8 @@ Page({
   data: {
     userInfo: {},
     hasUserInfo: false,
+    total:'',
+    date:''
   },
   //事件处理函数
   bindViewTap: function() {
@@ -40,5 +42,16 @@ Page({
         }
       })
     }
+  // 从缓存中读取分数，日期信息
+    var that = this
+    wx.getStorage({
+      key: 'myPlan',
+      success: function (res) {
+        that.setData({
+          total: res.data.total,
+          date: res.data.date
+        })
+      }
+    })
   }
 })

@@ -41,7 +41,9 @@ Page({
     let c = e.currentTarget.dataset.c
     console.log(t)
     console.log(c)
-
+    wx.navigateTo({
+      url: '../../pages/test/test?topik='+c+'&times='+t,
+    })
   },
   /**
    * 生命周期函数--监听页面显示

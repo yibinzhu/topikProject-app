@@ -1,7 +1,7 @@
 <!--pages/test/test.wxml-->
-<scroll-view scroll-y style="height:{{windowH}}px">
+<scroll-view scroll-y style="height:{{windowH}}px;background-color:#f7f7f7">
 <view>
-  <view class="question-container" style="font-size:18px;color:#8b8b8b">现在是第 {{queIdx+1}} 题 总共 {{questionData.length}} 题</view> 
+  <view class="question-container" style="font-size:18px;color:#37aba2;margin-top:10px;">现在是第 {{queIdx+1}} 题 , 总共 {{questionData.length}} 题</view> 
   <!-- 例题 -->
   <view hidden="{{questionData[queIdx].example.ex!=0}}">
     <view class="question-container">{{questionData[queIdx].example.section}}</view>
@@ -9,32 +9,28 @@
       <view>가 :공책이에요?</view>
       <view>나 :</view>
       <view class="ex-answers">
-        <view class="ex-item">1. {{questionData[queIdx].example.answers[0]}}</view>
-        <view class="ex-item">2. {{questionData[queIdx].example.answers[1]}}</view>
-        <view class="ex-item">3. {{questionData[queIdx].example.answers[2]}}</view>
-        <view class="ex-item">4. {{questionData[queIdx].example.answers[3]}}</view>
+        <view class="ex-item"><text class="ex-num">①</text> {{questionData[queIdx].example.answers[0]}}</view>
+        <view class="ex-item"><text class="ex-num">②</text> {{questionData[queIdx].example.answers[1]}}</view>
+        <view class="ex-item"><text class="ex-num">③</text> {{questionData[queIdx].example.answers[2]}}</view>
+        <view class="ex-item"><text class="ex-num">④</text> {{questionData[queIdx].example.answers[3]}}</view>
       </view>
     </view>
   </view>
-  <view class="answer-container {{option1.id==idx?'option-choosed':''}}" data-t="1" data-num="{{questionData[queIdx].num}}" data-score="{{questionData[queIdx].score}}"  data-correct="{{questionData[queIdx].correct}}" bindtap="chooseAnswer">1.{{questionData[queIdx].answers[0]}}</view>
-  <view class="answer-container {{option2.id==idx?'option-choosed':''}}" data-t="2" data-num="{{questionData[queIdx].num}}" data-score="{{questionData[queIdx].score}}" data-correct="{{questionData[queIdx].correct}}" bindtap="chooseAnswer">2.{{questionData[queIdx].answers[1]}}</view>
-  <view class="answer-container {{option3.id==idx?'option-choosed':''}}" data-t="3" data-num="{{questionData[queIdx].num}}" data-score="{{questionData[queIdx].score}}" data-correct="{{questionData[queIdx].correct}}" bindtap="chooseAnswer">3.{{questionData[queIdx].answers[2]}}</view>
-  <view class="answer-container {{option4.id==idx?'option-choosed':''}}" data-t="4" data-num="{{questionData[queIdx].num}}" data-score="{{questionData[queIdx].score}}" data-correct="{{questionData[queIdx].correct}}" bindtap="chooseAnswer">4.{{questionData[queIdx].answers[3]}}</view>
+  <view class="answer-container {{option1.id==idx?'option-choosed':''}}" data-t="1" data-num="{{questionData[queIdx].num}}" data-score="{{questionData[queIdx].score}}"  data-correct="{{questionData[queIdx].correct}}" bindtap="chooseAnswer"><text class="answer-num">①</text> {{questionData[queIdx].answers[0]}}</view>
+  <view class="answer-container {{option2.id==idx?'option-choosed':''}}" data-t="2" data-num="{{questionData[queIdx].num}}" data-score="{{questionData[queIdx].score}}" data-correct="{{questionData[queIdx].correct}}" bindtap="chooseAnswer"><text class="answer-num">②</text> {{questionData[queIdx].answers[1]}}</view>
+  <view class="answer-container {{option3.id==idx?'option-choosed':''}}" data-t="3" data-num="{{questionData[queIdx].num}}" data-score="{{questionData[queIdx].score}}" data-correct="{{questionData[queIdx].correct}}" bindtap="chooseAnswer"><text class="answer-num">③</text> {{questionData[queIdx].answers[2]}}</view>
+  <view class="answer-container {{option4.id==idx?'option-choosed':''}}" data-t="4" data-num="{{questionData[queIdx].num}}" data-score="{{questionData[queIdx].score}}" data-correct="{{questionData[queIdx].correct}}" bindtap="chooseAnswer"><text class="answer-num">④</text> {{questionData[queIdx].answers[3]}}</view>
 </view>
 <audio  src="../../data/{{questionData[queIdx].src}}" id="myAudio" ></audio>
-<view class="control-btn">
-<view class="audio-btn {{playIcon}}" bindtap="audioPlay">
-  <view>播放
-  <text class="cl1"></text>
-  <text class="cl2"></text>
-  <text class="cl3"></text>
-  </view>
-  </view>
-  <view class="audio-btn" bindtap="audioPause" style="display:flex;flex-direction:row;align-items: center;justify-content: center ">暂停<view class="{{pauseIcon}}"></view></view>
-  </view>
 </scroll-view>
+
 <view class="tabBar">
   <view bindtap="reviewTap">上一题</view>
-  <view>{{queIdx<10?'0':''}}{{queIdx+1}}/{{questionData.length<10?'0':''}}{{questionData.length}}</view>
+   <view class="playIcon" hidden="{{!playing}}" bindtap="playToggle" data-p="{{playing}}">
+        <image src="../../images/icons/pause.png" />
+      </view>
+      <view class="playIcon" hidden="{{playing}}" bindtap="playToggle" data-p="{{playing}}">
+        <image src="../../images/icons/play.png" />
+      </view>
   <view bindtap="nextTap">下一题</view>
 </view>

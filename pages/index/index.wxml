@@ -11,15 +11,19 @@
 <!-- 分数栏 -->
 <view class=" container column-layout" style="height:80px;margin-top:-80rpx; justify-content: center">
   <view class="row-layout">
-    <view class="column-layout" style="width:340rpx">
-      <view class="sub-title">2017-10-20考试</view>
-      <view style="color:#37aba2"><text style="font-size:30px;margin-right:10rpx">15</text>天</view>
-    </view>
+    <navigator url="../plan/plan">
+      <view class="column-layout" style="width:340rpx">
+        <view class="sub-title">{{date}}考试</view>
+        <view style="color:#37aba2"><text style="font-size:30px;margin-right:10rpx">15</text>天</view>
+      </view>
+    </navigator>
     <view style="border:1px solid #e8e8e8;height:120rpx;marign:0;"></view>
+    <navigator url="../plan/plan">
     <view class="column-layout" style="width:340rpx;">
       <view class="sub-title">目标分数</view>
-      <view style="color:#37aba2"><text style="font-size:30px;margin-right:10rpx">12</text>分</view>
+      <view style="color:#37aba2"><text style="font-size:30px;margin-right:10rpx">{{total}}</text>分</view>
     </view>
+    </navigator>
   </view>
 </view>
 <!-- 分类栏 -->

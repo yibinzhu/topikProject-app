@@ -20,6 +20,7 @@ Page({
     windowH:'',
     total:'',
     queIdx:0,
+    playing:false,
     playIcon:'',
     pauseIcon:'',
     checked:false,
@@ -87,6 +88,19 @@ Page({
       }
     ]
   },
+  playToggle:function(){
+    if (this.data.playing) {
+      console.log("暂停播放");
+      this.setData({ playing: false });
+      this.audioCtx.pause()
+    } else {
+      console.log("继续播放")
+      this.audioCtx.play()
+      this.setData({
+        playing: true
+      });
+    }
+  },
   chooseAnswer:function(e){
     let checkedId = e.currentTarget.dataset.t;
     let score = e.currentTarget.dataset.score;
@@ -121,7 +135,8 @@ Page({
       this.setData({
         queIdx: nowIdx,
         checked: false,
-        idx:''
+        idx:'',
+        playing:false,
       })
       this.audioPlay()
       this.checkMyAnswer(this.data.myAnswerDataNum, this.data.myAnswerDataCheckedId, this.data.myAnswerDataScore, this.data.myAnswerDataCorrect)
@@ -159,6 +174,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(options)
     var that = this;
     wx.getSystemInfo({
       success: function (res) {

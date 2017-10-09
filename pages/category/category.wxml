@@ -8,20 +8,20 @@
   </view>
 </view>
 <scroll-view class="c-container" style="margin-top:60rpx;">
-<view hidden="{{tabidx!=0}}" wx:for="{{categoryData}}" wx:key="{{item}}">
+<view class="itemContainer" hidden="{{tabidx!=0}}" wx:for="{{categoryData}}" wx:key="{{item}}">
     <view class="subTitle">{{item.years}}年</view>
     <view class="c-row">
       <view wx:for="{{item.times}}" wx:for-item="i" wx:key="{{i}}">
-      <view class="c-item" data-c="1" data-t="{{i}}" bindtap="itemChoose">{{i}}</view>
+      <view class="c-item1" data-c="1" data-t="{{i}}" bindtap="itemChoose">{{i}}</view>
       </view>
     </view>
   </view>
   
-  <view hidden="{{tabidx!=1}}" wx:for="{{categoryData}}" wx:key="{{item}}">
+  <view class="itemContainer" hidden="{{tabidx!=1}}" wx:for="{{categoryData}}" wx:key="{{item}}">
     <view class="subTitle">{{item.years}}年</view>
     <view class="c-row">
       <view wx:for="{{item.times}}" wx:for-item="i" wx:key="{{i}}">
-      <view class="c-item" data-c="2" data-t="{{i}}" bindtap="itemChoose">{{i}}</view>
+      <view class="c-item2" data-c="2" data-t="{{i}}" bindtap="itemChoose">{{i}}</view>
       </view>
     </view>
   </view>

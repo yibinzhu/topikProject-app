@@ -3,5 +3,16 @@
   margin:40rpx 40rpx;
 }
 .plan-item{
-  padding:40rpx 0;
+  padding:30rpx 0;
+}
+.changePlan-btn{
+  margin:40rpx;
+  color:white;
+  background-color: #3dacb7;
+  height:46px;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }

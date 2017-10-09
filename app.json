@@ -1,11 +1,11 @@
 {
   "pages":[
-    "pages/planEdit/planEdit",
     "pages/index/index",
+    "pages/plan/plan",
     "pages/test/test",
+    "pages/planEdit/planEdit",
     "pages/category/category",
     "pages/player/player",
-    "pages/plan/plan",
     "pages/setting/setting",
     "pages/logs/logs"
   ],
